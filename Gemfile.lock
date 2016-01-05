@@ -139,3 +139,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-paginate
+  json
+
+BUNDLED WITH
+   1.11.2
