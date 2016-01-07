@@ -67,6 +67,7 @@ def reverse2(x)
 	end
 	
 	return rstring
+end
 {% endhighlight %}
 
 Hooray! I have two solutions to this problem: one that utilizes arrays and one that does not, and the second solution is much cleaner. 
