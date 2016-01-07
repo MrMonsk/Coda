@@ -7,7 +7,7 @@ author:     "Yowon Yoon"
 header-img: "img/post-bg-02.jpg"
 ---
 
-Having been told my countless friends and mentors that the same coding challenges will appear again and again, I thought it best to go through the most common ones and practice them as much as possible.
+Having been told by countless friends and mentors that the same coding challenges will appear again and again, I thought it best to go through the most common ones and practice them as much as possible.
 
 ### FizzBuzz:
 >Write a program that prints the numbers from 1 to 100. But for multiples of three print `Fizz` instead of the number and for the multiples of five print `Buzz`. For numbers which are multiples of both three and five print `FizzBuzz`.
