@@ -5,3 +5,4 @@ require 'open-uri'
 
 gem 'github-pages'
 gem 'jekyll-paginate'
+

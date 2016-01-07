@@ -3,7 +3,7 @@ title: Coda
 header-img: img/home-bg.jpg
 email: yowonyoon@gmail.com
 description: "A blog about composing and coding"
-baseurl: "/Coda"
+baseurl: ""
 url: "http://MrMonsk.github.io/Coda"
 twitter_username: yowonyoon
 github_username:  MrMonsk
@@ -17,3 +17,4 @@ paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json"]
 port: 3000
 host: 0.0.0.0
+gems: [jekyll-paginate]
