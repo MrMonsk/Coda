@@ -13,4 +13,4 @@ Okay, so why _are_ manholes round? The first thought that came to my mind was th
 
 ![thingy]({{site.baseurl}}/img/shapesort.jpg)
 
-So, circular manhole covers win over square ones, but maybe the reason is simply because circles are prettier than square ones since they are harder to draw freehand unless if you're Spongebob.
+So, circular manhole covers win over square ones, but maybe the reason is simply because circles are prettier than square ones since they are harder to draw freehand unless if you're [Spongebob](https://www.youtube.com/watch?v=wmqsk1vZSKw).
