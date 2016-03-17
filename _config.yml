@@ -7,8 +7,6 @@ baseurl: ""
 url: "coda.yowonyoon.com"
 twitter_username: yowonyoon
 github_username:  MrMonsk
-codewars_username: MrMonsk
-
 
 # Build settings
 markdown: kramdown
