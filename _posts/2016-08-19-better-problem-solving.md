@@ -33,11 +33,11 @@ end
 3. Now let’s take the subroutine algorithmic approach:
   1. For me, this is where most of my time is spent. 
   2. Really look at what needs to change for a given number to find the next larger number comprised of the same digits.
-    1. The first thing I noticed was that a number in descending order (in terms of digits) is the largest possible permutation of those digits (e.g. 7654321).
-    2. The second thing I noticed was that if all the digits are in descending order EXCEPT the last two, then I merely need to swap the last two digits to get the next bigger number (e.g. 54312 → 54321)
-    3. The third thing I noticed was that there really were two ‘halves’ of the number, a `left` side and a `right` side, with only the digits on the `right` side needing to be swapped or reordered since we’re only concerned with the _next largest_.
-    4. Finally I realized that there is a digit that splits the left and right parts (i.e. first occurrence where the left digit is smaller than the right digit)
-    5. I can then swap the smallest digit to the right of this ‘pivot’ digit larger than the pivot with the pivot, and then sort the right half to get the next larger number! Here’s the code:
+     - The first thing I noticed was that a number in descending order (in terms of digits) is the largest possible permutation of those digits (e.g. 7654321).
+     - The second thing I noticed was that if all the digits are in descending order EXCEPT the last two, then I merely need to swap the last two digits to get the next bigger number (e.g. 54312 → 54321)
+     - The third thing I noticed was that there really were two ‘halves’ of the number, a `left` side and a `right` side, with only the digits on the `right` side needing to be swapped or reordered since we’re only concerned with the _next largest_.
+     - Finally I realized that there is a digit that splits the left and right parts (i.e. first occurrence where the left digit is smaller than the right digit)
+     - I can then swap the smallest digit to the right of this ‘pivot’ digit larger than the pivot with the pivot, and then sort the right half to get the next larger number! Here’s the code:
 {% highlight ruby %}
 def next_bigger(n)
   d = n.to_s.chars.map(&:to_i)
