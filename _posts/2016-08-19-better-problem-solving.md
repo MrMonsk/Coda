@@ -29,7 +29,7 @@ def next_bigger(n)
   bigger.min
 end
 {% endhighlight %}
-   - Unfortunately, this solution is really poor in terms of both space complexity O((n!/(n-k)!)) and time complexity O(n*n!) since it still needs to find every permutation and compare that permutation with the original, and then find the minimum O(n), so yeah this solution is already looking really bad for large numbers.
+Unfortunately, this solution is really poor in terms of both space complexity O((n!/(n-k)!)) and time complexity O(n*n!) since it still needs to find every permutation and compare that permutation with the original, and then find the minimum O(n), so yeah this solution is already looking really bad for large numbers.
 3. Now let’s take the subroutine algorithmic approach:
   1. For me, this is where most of my time is spent. 
   2. Really look at what needs to change for a given number to find the next larger number comprised of the same digits.
