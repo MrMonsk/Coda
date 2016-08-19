@@ -13,10 +13,10 @@ Subroutines, subroutines, and subroutines. The number of times I’ve heard this
 There are a couple things that pop up in my head when I read a problem statement now. Let’s talk generally about my thought processes in the context of the problem:
 
 1. Read the problem and understand clearly what my _input_ vs. _desired output_ is
-  - I need to take an _input_ of type _integer_ and return another _integer_ comprised of the same digits which is not only LARGER than the original input, but also the smallest of any combination of digits that is larger the original.
+   - I need to take an _input_ of type _integer_ and return another _integer_ comprised of the same digits which is not only LARGER than the original input, but also the smallest of any combination of digits that is larger the original.
 2. Think of the laziest way (brute-force) that I could solve this
-  - Ruby’s Array class has a `permutation` method, so if I convert the _input_ _integer_ into a digits array, I can get all the different permutations that exist that are larger than the original input and store it as a new array of numbers larger than the original!
-  - Find the minimum value in this new array of numbers that I know are larger than the original, and that would give me my next biggest number! Here it is in code:
+   - Ruby’s Array class has a `permutation` method, so if I convert the _input_ _integer_ into a digits array, I can get all the different permutations that exist that are larger than the original input and store it as a new array of numbers larger than the original!
+   - Find the minimum value in this new array of numbers that I know are larger than the original, and that would give me my next biggest number! Here it is in code:
 
 {% highlight ruby %}
 def next_bigger(n)
@@ -29,7 +29,7 @@ def next_bigger(n)
   bigger.min
 end
 {% endhighlight %}
-Unfortunately, this solution is really poor in terms of both space complexity O((n!/(n-k)!)) and time complexity O(n*n!) since it still needs to find every permutation and compare that permutation with the original, and then find the minimum O(n), so yeah this solution is already looking really bad for large numbers.
+  - Unfortunately, this solution is really poor in terms of both space complexity O((n!/(n-k)!)) and time complexity O(n*n!) since it still needs to find every permutation and compare that permutation with the original, and then find the minimum O(n), so yeah this solution is already looking really bad for large numbers.  
 3. Now let’s take the subroutine algorithmic approach:
   1. For me, this is where most of my time is spent. 
   2. Really look at what needs to change for a given number to find the next larger number comprised of the same digits.
